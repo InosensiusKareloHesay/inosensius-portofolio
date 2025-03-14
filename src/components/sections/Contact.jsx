@@ -1,6 +1,9 @@
 import { useState } from "react";
 import { RevealOnScroll } from "../RevealOnScroll";
-import emailjs from 'emailjs-com'
+import emailjs from 'emailjs-com';
+import logoInstagram from "../../assets/instagram.png";
+import logoGithub from "../../assets/github.png";
+import logoLinkedin from "../../assets/linkedin.png";
 
 export const Contact = () => {
     const [formData, setFormData] = useState({
@@ -36,12 +39,60 @@ export const Contact = () => {
     
     return (
         <section id="contact"
-            className="min-h-screen flex item-center justify-center relative py-20"
+            className="min-h-screen flex items-center justify-center relative py-20"
         >
             <RevealOnScroll>
                 <div className="w-[80vw] max-w-4xl px-4">
-                    <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-[#1452a3] to-emerald-400 bg-clip-text text-transparent text-center">
+                    <h2 className="text-3xl font-bold mb-4 bg-gradient-to-r from-[#1452a3] to-emerald-400 bg-clip-text text-transparent text-center">
                         Get In Touch
+                    </h2>
+                    <div className="grid grid-cols-1 md:grid-cols-3 items-center justify-center mb-8">
+                        <div className="mx-2 my-2">
+                            <a href="https://www.instagram.com/inosensius.kh" 
+                                target="_blank" 
+                                rel="noopener noreferrer"
+                                className="flex flex-col items-center text-[#c1d8f6] hover:text-[#ece46a]"
+                            >
+                                <img
+                                    src={logoInstagram}
+                                    alt="Instagram"
+                                    className="w-15 h-15 rounded-full"
+                                />
+                                <span className="font-medium mt-2">inosensius.kh</span>
+                            </a>
+                        </div>
+                        <div className="flex flex-col mx-2 my-2 items-center">
+                            <a href="https://github.com/InosensiusKareloHesay" 
+                                target="_blank" 
+                                rel="noopener noreferrer"
+                                className="flex flex-col items-center text-[#c1d8f6] hover:text-[#ece46a]"
+                            >
+                                <img
+                                    src={logoGithub}
+                                    alt="Github"
+                                    className="w-15 h-15 rounded-full"
+                                />
+                                <span className="font-medium mt-2">InosensiusKareloHesay</span>
+                            </a>
+                        </div>
+                        <div className="flex flex-col mx-2 my-2 items-center">
+                            <a href="https://www.linkedin.com/in/inosensius-hesay/" 
+                                target="_blank" 
+                                rel="noopener noreferrer"
+                                className="flex flex-col items-center text-[#c1d8f6] hover:text-[#ece46a]"
+                            >
+                                <img
+                                    src={logoLinkedin}
+                                    alt="LinkedIn"
+                                    className="w-15 h-15 rounded-full"
+                                />
+                                <span className="font-medium mt-2">in/inosensius-hesay</span>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <h2 className="text-3xl font-bold mb-4 bg-gradient-to-r from-[#1452a3] to-emerald-400 bg-clip-text text-transparent text-center">
+                        Send Message Direct
                     </h2>
                     <form className="space-y-6" onSubmit={handleSubmit}>
                         <div className="relative">

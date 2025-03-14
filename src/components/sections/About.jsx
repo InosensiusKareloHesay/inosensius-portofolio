@@ -6,7 +6,7 @@ export const About = () => {
     const backendSkills = ["PHP", "Node", "Python", "MySql", "PostgreSql"]
 
     return (
-        <section id="about" className="min-h-screen flex item-center justify-center py-20">
+        <section id="about" className="min-h-screen flex items-center justify-center py-20">
             <RevealOnScroll>
                 <div className="max-w-3xl mx-auto px-4">
                     <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-[#1452a3] to-emerald-400 bg-clip-text text-transparent text-center">
@@ -49,7 +49,7 @@ export const About = () => {
                             </div>
                     </div>
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap 5 mt-8">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mt-8">
                         <div className="m-1 p-4 rounded-xl border-white/20 border hover:-translate-y-0.5 
                             hover:shadow-[0_0_3px_#14a376]/[50%] hover:border-emerald-600 transition-all">
                                 <h3 className="text-xl font-bold mb-4">
