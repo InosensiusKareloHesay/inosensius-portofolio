@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { RevealOnScroll } from "../RevealOnScroll";
-// import emailjs from 'emailjs-com'
+import emailjs from 'emailjs-com'
 
 export const Contact = () => {
     const [formData, setFormData] = useState({
@@ -8,26 +8,30 @@ export const Contact = () => {
         email : "",
         message : ""    
     })
+    const [loading, setLoading] = useState(false)
 
     const handleSubmit = (e) => {
-        console.log(e)
-        console.log(import.meta.env)
-        // emailjs.sendForm(
-        //     import.meta.env.VITE_SERVICE_ID,
-        //     import.meta.env.VITE_TEMPLATE_ID,
-        //     e.target,
-        //     import.meta.env.VITE_PUBLIC_KEY
-        // )
-        // .then(() => {
-        //     alert("Message Sent!")
-        //     setFormData({
-        //         name : "",
-        //         email : "",
-        //         message : ""   
-        //     })
-        // }).catch(( )=> {
-        //     alert("Oops! Something went wrong! Please try again!")
-        // })
+        e.preventDefault()
+        setLoading(true)
+
+        emailjs.sendForm(
+            import.meta.env.VITE_SERVICE_ID,
+            import.meta.env.VITE_TEMPLATE_ID,
+            e.target,
+            import.meta.env.VITE_PUBLIC_KEY
+        )
+        .then(() => {
+            setLoading(false)
+            alert("Message Sent!")
+            setFormData({
+                name : "",
+                email : "",
+                message : ""   
+            })
+        }).catch(( )=> {
+            setLoading(false)
+            alert("Oops! Something went wrong! Please try again!")
+        })
     }
     
     return (
@@ -71,7 +75,7 @@ export const Contact = () => {
                         <button type="submit"
                             className="w-full bg-[#1452a3] text-[#c1d8f6] py-3 px-6 rounded font-medium transition relative overflow-hidden hover:-translate-y-0.5 hover:shadow-[0_0_10px_#8ab7ef]"
                         >
-                            Send Message
+                            {loading ? "Sending..." : "Send Message"}
                         </button>
                     </form>
                 </div>
