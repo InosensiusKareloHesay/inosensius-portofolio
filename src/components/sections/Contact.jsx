@@ -92,13 +92,13 @@ export const Contact = () => {
                     </div>
                     
                     <h2 className="text-3xl font-bold mb-4 bg-gradient-to-r from-[#1452a3] to-emerald-400 bg-clip-text text-transparent text-center">
-                        Send Message Direct
+                        Send Email Direct
                     </h2>
                     <form className="space-y-6" onSubmit={handleSubmit}>
                         <div className="relative">
                             <input type="text" id="name" name="name" required 
                                 className="w-full bg-white/5 border border-white/20 rounded px-4 py-3 text-[#c1d8f6] transition focus-outline-none focus:border-[#2475d3] focus:bg-emerald-800"
-                                placeholder="Name.."
+                                placeholder="Your Name.."
                                 value={formData.name}
                                 onChange={(e) => setFormData({...formData, name: e.target.value})}
                             />
@@ -107,7 +107,7 @@ export const Contact = () => {
                         <div className="relative">
                             <input type="email" id="email" name="email" required 
                                 className="w-full bg-white/5 border border-white/20 rounded px-4 py-3 text-[#c1d8f6] transition focus-outline-none focus:border-[#2475d3] focus:bg-emerald-800"
-                                placeholder="example@gmail.com"
+                                placeholder="your.email@gmail.com"
                                 value={formData.email}
                                 onChange={(e) => setFormData({...formData, email: e.target.value})}
                             />
@@ -124,9 +124,9 @@ export const Contact = () => {
                         </div>
 
                         <button type="submit"
-                            className="w-full bg-[#1452a3] text-[#c1d8f6] py-3 px-6 rounded font-medium transition relative overflow-hidden hover:-translate-y-0.5 hover:shadow-[0_0_10px_#8ab7ef]"
+                            className="w-full bg-emerald-500 text-[#0f2242] py-3 px-6 rounded font-medium transition relative overflow-hidden hover:text-[#e3ecfb] hover:-translate-y-0.5 hover:shadow-[0_0_5px_#14a376]/[70%]"
                         >
-                            {loading ? "Sending..." : "Send Message"}
+                            {loading ? "Sending..." : "Send Email"}
                         </button>
                     </form>
                 </div>

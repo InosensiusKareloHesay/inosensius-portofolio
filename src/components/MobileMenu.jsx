@@ -17,7 +17,7 @@ export const MobileMenu = ( {menuOpen, setMenuOpen} ) => {
             </button>
 
             <a 
-                href="#home" 
+                href="#" 
                 onClick={()=> setMenuOpen(false)}
                 className={`text-2xl font-semibold text-[#c1d8f6] hover:text-emerald-400 my-4 transform transition-transform duration-300
                     ${menuOpen ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}

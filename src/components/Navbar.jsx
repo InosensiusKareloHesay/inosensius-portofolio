@@ -10,7 +10,7 @@ export const Navbar = ( {menuOpen, setMenuOpen} ) => {
         <nav className="fixed top-0 w-full z-40 bg-[rgba(10,10,10, 0.8)] backdrop-blur-lg border-white/10 shadow-lg">
             <div className="max-w-5xl mx-auto px-4">
                 <div className="flex justify-between items-center h-16">
-                    <a href="#home" className="font-mono text-xl font-bold text-[#c1d8f6]">
+                    <a href="#" className="font-mono text-xl font-bold text-[#c1d8f6]">
                         Ino
                         <span className="text-emerald-400">sensius</span>
                     </a>
@@ -23,7 +23,7 @@ export const Navbar = ( {menuOpen, setMenuOpen} ) => {
 
                     <div className="hidden md:flex items-center space-x-8">
                         <a 
-                            href="#home" 
+                            href="#" 
                             className="font-semibold text-[#c1d8f6] hover:text-emerald-400 transition-colors">
                                 Home
                         </a>
