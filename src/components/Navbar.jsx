@@ -24,22 +24,38 @@ export const Navbar = ( {menuOpen, setMenuOpen} ) => {
                     <div className="hidden md:flex items-center space-x-8">
                         <a 
                             href="#" 
-                            className="font-semibold text-[#c1d8f6] hover:text-emerald-400 transition-colors">
+                            className="font-semibold text-[#c1d8f6] transition-colors
+                                hover:text-emerald-400
+                                focus:text-emerald-400
+                                active:text-emerald-400
+                            ">
                                 Home
                         </a>
                         <a 
                             href="#about" 
-                            className="font-semibold text-[#c1d8f6] hover:text-emerald-400 transition-colors">
+                            className="font-semibold text-[#c1d8f6] transition-colors
+                                hover:text-emerald-400
+                                focus:text-emerald-400
+                                active:text-emerald-400
+                            ">
                                 About
                         </a>
                         <a 
                             href="#projects" 
-                            className="font-semibold text-[#c1d8f6] hover:text-emerald-400 transition-colors">
+                            className="font-semibold text-[#c1d8f6] transition-colors
+                                hover:text-emerald-400
+                                focus:text-emerald-400
+                                active:text-emerald-400
+                            ">
                                 Projects
                         </a>
                         <a 
                             href="#contact" 
-                            className="font-semibold text-[#c1d8f6] hover:text-emerald-400 transition-colors">
+                            className="font-semibold text-[#c1d8f6] transition-colors
+                                hover:text-emerald-400
+                                focus:text-emerald-400
+                                active:text-emerald-400
+                            ">
                                 Contact
                         </a>
                     </div>

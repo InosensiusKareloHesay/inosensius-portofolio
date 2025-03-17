@@ -14,47 +14,72 @@ export const About = () => {
                         About Me
                     </h2>
 
-                    <div className="rounded-3xl p-8 border-white/20 border hover:-translate-y-0.5 
-                        hover:shadow-[0_0_5px_#14a376]/[50%] hover:border-emerald-600 transition-all">
+                    <div className="rounded-3xl p-8 border-white/20 border transition-all
+                        hover:-translate-y-0.5 hover:shadow-[0_0_5px_#14a376]/[50%] hover:border-emerald-600
+                        focus:-translate-y-0.5 focus:shadow-[0_0_5px_#14a376]/[50%] focus:border-emerald-600
+                        active:-translate-y-0.5 active:shadow-[0_0_5px_#14a376]/[50%] active:border-emerald-600
+                        
+                    ">
                             <p className="font-semibold text-#c1d8f6 mb-6">
                                 Love learning something new and never stop trying
                             </p>
 
                             <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
-                                <div className="rounded-xl p-6 hover:-translate-y-1 transition-all">
+                                <div className="rounded-xl p-6 transition-all
+                                    hover:-translate-y-1 
+                                    focus:-translate-y-1 
+                                    active:-translate-y-1 
+                                ">
                                     <h3 className="text-[#ece66a] text-left text-xl font-bold mb-4">Frontend</h3>
                                     <div className="flex flex-wrap gap-2">
                                         {frontendSkills.map((tech, key) => (
                                             <span 
                                                 key={key}
-                                                className="bg-[#8ab7ef] text-[#0f2242] py-1 px-3 rounded-full text-sm font-semibold
-                                                hover:bg-emerald-300 hover:shadow-[0_2px_5px_#14a376]/[10%] transition">
+                                                className="bg-[#8ab7ef] text-[#0f2242] py-1 px-3 rounded-full text-sm font-semibold transition
+                                                    hover:bg-emerald-300 hover:shadow-[0_2px_5px_#14a376]/[10%]
+                                                    focus:bg-emerald-300 focus:shadow-[0_2px_5px_#14a376]/[10%]
+                                                    active:bg-emerald-300 active:shadow-[0_2px_5px_#14a376]/[10%] 
+                                                ">
                                                     {tech}
                                             </span>
                                         ))}
                                     </div>
                                 </div>
-                                <div className="rounded-xl p-6 hover:-translate-y-1 transition-all">
+                                <div className="rounded-xl p-6 transition-all
+                                    hover:-translate-y-1
+                                    focus:-translate-y-1 
+                                    active:-translate-y-1 
+                                ">
                                     <h3 className="text-[#ece66a] text-left text-xl font-bold mb-4">Backend</h3>
                                     <div className="flex flex-wrap gap-2">
                                         {backendSkills.map((tech, key) => (
                                             <span 
                                                 key={key}
-                                                className="bg-[#8ab7ef] text-[#0f2242] py-1 px-3 rounded-full text-sm font-semibold
-                                                hover:bg-emerald-300 hover:shadow-[0_2px_5px_#14a376]/[10%] transition">
+                                                className="bg-[#8ab7ef] text-[#0f2242] py-1 px-3 rounded-full text-sm font-semibold transition
+                                                    hover:bg-emerald-300 hover:shadow-[0_2px_5px_#14a376]/[10%]
+                                                    focus:bg-emerald-300 focus:shadow-[0_2px_5px_#14a376]/[10%]
+                                                    active:bg-emerald-300 active:shadow-[0_2px_5px_#14a376]/[10%] 
+                                                ">
                                                     {tech}
                                             </span>
                                         ))}
                                     </div>
                                 </div>
-                                <div className="rounded-xl p-6 hover:-translate-y-1 transition-all">
+                                <div className="rounded-xl p-6 transition-all
+                                    hover:-translate-y-1
+                                    focus:-translate-y-1 
+                                    active:-translate-y-1
+                                ">
                                     <h3 className="text-[#ece66a] text-left text-xl font-bold mb-4">Etc</h3>
                                     <div className="flex flex-wrap gap-2">
                                         {etcSkills.map((tech, key) => (
                                             <span 
                                                 key={key}
-                                                className="bg-[#8ab7ef] text-[#0f2242] py-1 px-3 rounded-full text-sm font-semibold
-                                                hover:bg-emerald-300 hover:shadow-[0_2px_5px_#14a376]/[10%] transition">
+                                                className="bg-[#8ab7ef] text-[#0f2242] py-1 px-3 rounded-full text-sm font-semibold transition
+                                                    hover:bg-emerald-300 hover:shadow-[0_2px_5px_#14a376]/[10%]
+                                                    focus:bg-emerald-300 focus:shadow-[0_2px_5px_#14a376]/[10%]
+                                                    active:bg-emerald-300 active:shadow-[0_2px_5px_#14a376]/[10%]
+                                                ">
                                                     {tech}
                                             </span>
                                         ))}
@@ -64,8 +89,11 @@ export const About = () => {
                     </div>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mt-8">
-                        <div className="m-1 p-4 rounded-xl border-white/20 border hover:-translate-y-0.5 
-                            hover:shadow-[0_0_3px_#14a376]/[50%] hover:border-emerald-600 transition-all">
+                        <div className="m-1 p-4 rounded-xl border-white/20 border transition-all
+                            hover:-translate-y-0.5 hover:shadow-[0_0_3px_#14a376]/[50%] hover:border-emerald-600
+                            focus:-translate-y-0.5 focus:shadow-[0_0_3px_#14a376]/[50%] focus:border-emerald-600
+                            active:-translate-y-0.5 active:shadow-[0_0_3px_#14a376]/[50%] active:border-emerald-600
+                        ">
                                 <h3 className="text-xl font-bold mb-4">
                                     Education
                                 </h3>
@@ -78,9 +106,11 @@ export const About = () => {
                                     </li>
                                 </ul>
                         </div>
-                        <div className="m-1 p-4 rounded-xl border-white/20 border hover:-translate-y-0.5
-                            hover:shadow-[0_0_3px_#14a376]/[50%] hover:border-emerald-600 transition-all"
-                            >
+                        <div className="m-1 p-4 rounded-xl border-white/20 border transition-all
+                            hover:-translate-y-0.5 hover:shadow-[0_0_3px_#14a376]/[50%] hover:border-emerald-600
+                            focus:-translate-y-0.5 focus:shadow-[0_0_3px_#14a376]/[50%] focus:border-emerald-600
+                            active:-translate-y-0.5 active:shadow-[0_0_3px_#14a376]/[50%] active:border-emerald-600
+                        ">
                                 <h3 className="text-xl font-bold mb-4">
                                     Work Experience
                                 </h3>
