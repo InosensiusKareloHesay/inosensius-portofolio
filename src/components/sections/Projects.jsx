@@ -16,8 +16,10 @@ export const Projects = () => {
                     </h2>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-                        <div className="p-6 rounded-xl border border-white/20 border hover:-translate-y-0.5 hover:border-emerald-600
-                            hover:shadow-[0_0_5px_#14a376]/[50%] transition-all
+                        <div className="p-6 rounded-xl border border-white/20 border transition-all
+                            hover:-translate-y-0.5 hover:border-emerald-600 hover:shadow-[0_0_5px_#14a376]/[50%]
+                            focus:-translate-y-0.5 focus:border-emerald-600 focus:shadow-[0_0_5px_#14a376]/[50%]
+                            active:-translate-y-0.5 active:border-emerald-600 active:shadow-[0_0_5px_#14a376]/[50%]
                         ">
                                 <h3 className="text-[#ece66a] text-left font-bold text-xl mb-2">Supply Chain Management</h3>
                                 <img 
@@ -34,8 +36,11 @@ export const Projects = () => {
                                     {["Vue.Js", "Node.Js", "JavaScript", "PostgreSql", "Redis"].map((tech, key) => (
                                         <span 
                                             key={key}
-                                            className="bg-[#8ab7ef] text-[#0f2242] py-1 px-3 rounded-full text-sm font-semibold
-                                            hover:bg-emerald-300 hover:shadow-[0_2px_5px_#14a376]/[10%] transition">
+                                            className="bg-[#8ab7ef] text-[#0f2242] py-1 px-3 rounded-full text-sm font-semibold transition
+                                                hover:bg-emerald-300 hover:shadow-[0_2px_5px_#14a376]/[10%]
+                                                focus:bg-emerald-300 focus:shadow-[0_2px_5px_#14a376]/[10%]
+                                                active:bg-emerald-300 active:shadow-[0_2px_5px_#14a376]/[10%]
+                                            ">
                                                 {tech}
                                         </span>
                                     ))}
@@ -49,8 +54,10 @@ export const Projects = () => {
                                     </a>
                                 </div> */}
                         </div>
-                        <div className="p-6 rounded-xl border border-white/20 border hover:-translate-y-0.5 hover:border-emerald-600
-                            hover:shadow-[0_0_5px_#14a376]/[50%] transition-all
+                        <div className="p-6 rounded-xl border border-white/20 border transition-all
+                            hover:-translate-y-0.5 hover:border-emerald-600 hover:shadow-[0_0_5px_#14a376]/[50%]
+                            focus:-translate-y-0.5 focus:border-emerald-600 focus:shadow-[0_0_5px_#14a376]/[50%]
+                            active:-translate-y-0.5 active:border-emerald-600 active:shadow-[0_0_5px_#14a376]/[50%]
                         ">
                                 <h3 className="text-[#ece66a] text-left font-bold text-xl mb-2">Fitur Blanket Order</h3>
                                 <img 
@@ -67,8 +74,11 @@ export const Projects = () => {
                                     {["Vue.Js", "Node.Js", "JavaScript", "jQuery", "PHP", "PostgreSql", "Redis"].map((tech, key) => (
                                         <span 
                                             key={key}
-                                            className="bg-[#8ab7ef] text-[#0f2242] py-1 px-3 rounded-full text-sm font-semibold
-                                            hover:bg-emerald-300 hover:shadow-[0_2px_5px_#14a376]/[10%] transition">
+                                            className="bg-[#8ab7ef] text-[#0f2242] py-1 px-3 rounded-full text-sm font-semibold transition
+                                                hover:bg-emerald-300 hover:shadow-[0_2px_5px_#14a376]/[10%]
+                                                focus:bg-emerald-300 focus:shadow-[0_2px_5px_#14a376]/[10%]
+                                                active:bg-emerald-300 active:shadow-[0_2px_5px_#14a376]/[10%]
+                                            ">
                                                 {tech}
                                         </span>
                                     ))}
@@ -82,8 +92,10 @@ export const Projects = () => {
                                     </a>
                                 </div> */}
                         </div>
-                        <div className="p-6 rounded-xl border border-white/20 border hover:-translate-y-0.5 hover:border-emerald-600
-                            hover:shadow-[0_0_5px_#14a376]/[50%] transition-all
+                        <div className="p-6 rounded-xl border border-white/20 border transition-all
+                            hover:-translate-y-0.5 hover:border-emerald-600 hover:shadow-[0_0_5px_#14a376]/[50%]
+                            focus:-translate-y-0.5 focus:border-emerald-600 focus:shadow-[0_0_5px_#14a376]/[50%]
+                            active:-translate-y-0.5 active:border-emerald-600 active:shadow-[0_0_5px_#14a376]/[50%]
                         ">
                                 <h3 className="text-[#ece66a] text-left font-bold text-xl mb-2">Fitur Material Issued Voucher (MIV)</h3>
                                 <img 
@@ -100,8 +112,11 @@ export const Projects = () => {
                                     {["JavaScript", "PHP", "MySql", "Redis", "TypeScript", "jQuery", "CSS"].map((tech, key) => (
                                         <span 
                                             key={key}
-                                            className="bg-[#8ab7ef] text-[#0f2242] py-1 px-3 rounded-full text-sm font-semibold
-                                            hover:bg-emerald-300 hover:shadow-[0_2px_5px_#14a376]/[10%] transition">
+                                            className="bg-[#8ab7ef] text-[#0f2242] py-1 px-3 rounded-full text-sm font-semibold transition
+                                                hover:bg-emerald-300 hover:shadow-[0_2px_5px_#14a376]/[10%]
+                                                focus:bg-emerald-300 focus:shadow-[0_2px_5px_#14a376]/[10%]
+                                                active:bg-emerald-300 active:shadow-[0_2px_5px_#14a376]/[10%]
+                                            ">
                                                 {tech}
                                         </span>
                                     ))}
@@ -115,8 +130,10 @@ export const Projects = () => {
                                     </a>
                                 </div> */}
                         </div>
-                        <div className="p-6 rounded-xl border border-white/20 border hover:-translate-y-0.5 hover:border-emerald-600
-                            hover:shadow-[0_0_5px_#14a376]/[50%] transition-all
+                        <div className="p-6 rounded-xl border border-white/20 border transition-all
+                            hover:-translate-y-0.5 hover:border-emerald-600 hover:shadow-[0_0_5px_#14a376]/[50%]
+                            focus:-translate-y-0.5 focus:border-emerald-600 focus:shadow-[0_0_5px_#14a376]/[50%]
+                            active:-translate-y-0.5 active:border-emerald-600 active:shadow-[0_0_5px_#14a376]/[50%]
                         ">
                                 <h3 className="text-[#ece66a] text-left font-bold text-xl mb-2">Fitur Advance Shipping Notice (ASN)</h3>
                                 <img 
@@ -132,8 +149,11 @@ export const Projects = () => {
                                     {["JavaScript", "PHP", "MySql", "Redis", "TypeScript", "jQuery", "CSS"].map((tech, key) => (
                                         <span 
                                             key={key}
-                                            className="bg-[#8ab7ef] text-[#0f2242] py-1 px-3 rounded-full text-sm font-semibold
-                                            hover:bg-emerald-300 hover:shadow-[0_2px_5px_#14a376]/[10%] transition">
+                                            className="bg-[#8ab7ef] text-[#0f2242] py-1 px-3 rounded-full text-sm font-semibold transition
+                                                hover:bg-emerald-300 hover:shadow-[0_2px_5px_#14a376]/[10%]
+                                                focus:bg-emerald-300 focus:shadow-[0_2px_5px_#14a376]/[10%]
+                                                active:bg-emerald-300 active:shadow-[0_2px_5px_#14a376]/[10%]
+                                            ">
                                                 {tech}
                                         </span>
                                     ))}

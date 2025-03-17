@@ -51,8 +51,11 @@ export const Contact = () => {
                             <a href="https://www.instagram.com/inosensius.kh" 
                                 target="_blank" 
                                 rel="noopener noreferrer"
-                                className="flex flex-col items-center text-[#c1d8f6] hover:text-[#ece46a]"
-                            >
+                                className="flex flex-col items-center text-[#c1d8f6] 
+                                    hover:text-[#ece46a]
+                                    focus:text-[#ece46a]
+                                    active:text-[#ece46a]
+                            ">
                                 <img
                                     src={logoInstagram}
                                     alt="Instagram"
@@ -65,8 +68,11 @@ export const Contact = () => {
                             <a href="https://github.com/InosensiusKareloHesay" 
                                 target="_blank" 
                                 rel="noopener noreferrer"
-                                className="flex flex-col items-center text-[#c1d8f6] hover:text-[#ece46a]"
-                            >
+                                className="flex flex-col items-center text-[#c1d8f6] 
+                                    hover:text-[#ece46a]
+                                    focus:text-[#ece46a]
+                                    active:text-[#ece46a]
+                            ">
                                 <img
                                     src={logoGithub}
                                     alt="Github"
@@ -79,8 +85,11 @@ export const Contact = () => {
                             <a href="https://www.linkedin.com/in/inosensius-hesay/" 
                                 target="_blank" 
                                 rel="noopener noreferrer"
-                                className="flex flex-col items-center text-[#c1d8f6] hover:text-[#ece46a]"
-                            >
+                                className="flex flex-col items-center text-[#c1d8f6] 
+                                    hover:text-[#ece46a]
+                                    focus:text-[#ece46a]
+                                    active:text-[#ece46a]
+                            ">
                                 <img
                                     src={logoLinkedin}
                                     alt="LinkedIn"
@@ -124,8 +133,11 @@ export const Contact = () => {
                         </div>
 
                         <button type="submit"
-                            className="w-full bg-emerald-500 text-[#0f2242] py-3 px-6 rounded font-medium transition relative overflow-hidden hover:text-[#e3ecfb] hover:-translate-y-0.5 hover:shadow-[0_0_5px_#14a376]/[70%]"
-                        >
+                            className="w-full bg-emerald-500 text-[#0f2242] py-3 px-6 rounded font-medium transition relative overflow-hidden 
+                            hover:text-[#e3ecfb] hover:-translate-y-0.5 hover:shadow-[0_0_5px_#14a376]/[70%]
+                            focus:text-[#e3ecfb] focus:-translate-y-0.5 focus:shadow-[0_0_5px_#14a376]/[70%]
+                            active:text-[#e3ecfb] active:-translate-y-0.5 active:shadow-[0_0_5px_#14a376]/[70%]
+                        ">
                             {loading ? "Sending..." : "Send Email"}
                         </button>
                     </form>
