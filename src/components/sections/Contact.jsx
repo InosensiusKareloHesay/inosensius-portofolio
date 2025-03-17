@@ -133,10 +133,10 @@ export const Contact = () => {
                         </div>
 
                         <button type="submit"
-                            className="w-full bg-emerald-500 text-[#0f2242] py-3 px-6 rounded font-medium transition relative overflow-hidden 
-                            hover:text-[#e3ecfb] hover:-translate-y-0.5 hover:shadow-[0_0_5px_#14a376]/[70%]
-                            focus:text-[#e3ecfb] focus:-translate-y-0.5 focus:shadow-[0_0_5px_#14a376]/[70%]
-                            active:text-[#e3ecfb] active:-translate-y-0.5 active:shadow-[0_0_5px_#14a376]/[70%]
+                            className="bar-btn z-1 w-full bg-emerald-500 text-[#0f2242] py-3 px-6 rounded font-semibold transition relative overflow-hidden 
+                            hover:text-[#e3ecfb] hover:-translate-y-0.5 hover:shadow-[0_0_15px_#14a376]/[80%]
+                            focus:text-[#e3ecfb] focus:-translate-y-0.5 focus:shadow-[0_0_15px_#14a376]/[80%]
+                            active:text-[#e3ecfb] active:-translate-y-0.5 active:shadow-[0_0_15px_#14a376]/[80%]
                         ">
                             {loading ? "Sending..." : "Send Email"}
                         </button>

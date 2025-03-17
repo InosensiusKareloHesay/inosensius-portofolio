@@ -46,3 +46,19 @@ html, body {
   opacity: 1;
   transform: translateY(0);
 }
+
+.bar-btn::after{
+  content: "";
+  position: absolute;
+  background-color: #094b3b;
+  height: 100%;
+  width: 0%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.3s ease-in-out;
+}
+
+.bar-btn:hover::after{
+  width: 100%;
+}
