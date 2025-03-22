@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import './App.css'
 import { LoadingScreen } from './components/LoadingScreen'
 import { Navbar } from './components/Navbar'
@@ -11,6 +11,34 @@ import { Contact } from './components/sections/Contact'
 function App() {
   const [isLoaded, setIsLoaded] = useState(false)
   const [menuOpen, setMenuOpen] = useState(false)
+  const [currentHash, setCurrentHash] = useState(window.location.hash);
+
+  useEffect(() => {
+    const handleHashChange = () => {
+    setCurrentHash(window.location.hash);
+      
+    setTimeout(() => {
+      if (window.location.hash) {
+        const hashElement = document.querySelector(window.location.hash);
+        
+        if (hashElement) {
+          console.log("SINIIIII")
+          hashElement.scrollIntoView({ behavior: 'smooth' });
+        }
+      } else {
+        window.scrollTo(0, 0);
+      }
+
+      if (window.location.hash === '#contact') {
+        window.scrollTo(0, 0);
+      }
+    }, 100);
+    };
+
+    window.addEventListener('hashchange', handleHashChange);
+    handleHashChange();
+    return () => window.removeEventListener('hashchange', handleHashChange);
+  }, []);
 
   return (
     <>
@@ -24,10 +52,16 @@ function App() {
         >
           <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
           <MobileMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
-          <Home />
-          <About />
-          <Projects />
-          <Contact />
+
+          {currentHash !== '#contact' && (
+            <>
+              <Home />
+              <About />
+              <Projects />
+            </>
+          )}
+
+          {currentHash === '#contact' && <Contact />}
       </div>
     </>
   )
